@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/primerfondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="382dp"
+        android:layout_height="81dp"
+        android:textSize="60dp"
+        android:text="@string/texto_init"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/botonjugar"
+        android:layout_width="152dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="33dp"
+        android:backgroundTint="#B65050"
+        android:text="@string/boton_init_play"
+        app:layout_constraintBottom_toTopOf="@+id/botonsalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/botonsalir"
+        android:layout_width="152dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="210dp"
+        android:backgroundTint="#B65050"
+        android:text="@string/boton_init_quit"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonjugar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

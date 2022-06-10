@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/primerfondo">
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="385dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Correo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/contrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="385dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/contrasenaconfirma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+    <EditText
+        android:id="@+id/contrasenaconfirma"
+        android:layout_width="385dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasena" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="259dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="registrarusuario"
+        android:text="@string/boton_juego_registrofinal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsalirregistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenaconfirma"
+        android:backgroundTint="#B65050"/>
+
+    <Button
+        android:id="@+id/buttonsalirregistro"
+        android:layout_width="259dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/boton_juego_salirregistro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        android:backgroundTint="#B65050"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

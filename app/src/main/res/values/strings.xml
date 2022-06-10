@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My game</string>
+    <string name="texto_init">MyG</string>
+    <string name="texto_init_interfaz">Temáticas</string>
+    <string name="texto_init_interfaz1">Family Guy</string>
+    <string name="texto_init_interfaz2">Futurama</string>
+    <string name="texto_init_interfaz3">South Park</string>
+    <string name="boton_init_play">Jugar</string>
+    <string name="boton_init_quit">Salir</string>
+    <string name="boton_juego_quit">Salir</string>
+    <string name="boton_juego_reinit">Reinciar</string>
+    <string name="boton_juego_login">Iniciar sessión</string>
+    <string name="boton_juego_register">Registrarse</string>
+    <string name="boton_juego_registrofinal">Registrarse</string>
+    <string name="boton_juego_salirregistro">Salir</string>
+    <string name="boton_juego_invitado">Entrar como Invitado</string>
+    <string name="boton_juego_salirlogin">Salir</string>
+</resources>

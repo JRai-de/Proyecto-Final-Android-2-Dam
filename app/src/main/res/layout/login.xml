@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/primerfondo">
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="259dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="65dp"
+        android:onClick="iniciarsesion"
+        android:text="@string/boton_juego_login"
+        android:backgroundTint="#B65050"
+        app:layout_constraintBottom_toTopOf="@+id/buttonregistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenalogin"
+        />
+
+    <Button
+        android:id="@+id/buttoninvitado"
+        android:layout_width="259dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/boton_juego_invitado"
+        android:backgroundTint="#B65050"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsalirlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonregistro"
+        />
+
+    <EditText
+        android:id="@+id/contrasenalogin"
+        android:layout_width="385dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#40315A"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Contraseña"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correologin" />
+
+    <Button
+        android:id="@+id/buttonregistro"
+        android:layout_width="259dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="65dp"
+        android:text="@string/boton_juego_register"
+        app:layout_constraintBottom_toTopOf="@+id/buttoninvitado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+        android:backgroundTint="#B65050"/>
+
+    <EditText
+        android:id="@+id/correologin"
+        android:layout_width="385dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#9C27B0"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Correo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/contrasenalogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonsalirlogin"
+        android:layout_width="259dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="151dp"
+        android:backgroundTint="#B65050"
+        android:text="@string/boton_juego_salirlogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoninvitado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
